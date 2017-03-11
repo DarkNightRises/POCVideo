@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import video from './video.mp4'
 import './App.css';
 import ReactPlayer from 'react-player'
 
@@ -9,7 +8,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           </div>
-      <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
+      <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' loop='true' playing />
       </div>
     );
   }
