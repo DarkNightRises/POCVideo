@@ -4,6 +4,7 @@ import './index.css';
 import Clock from './Clock';
 import Toggle from './Toggle';
 import LoginControl from './LoginControl';
+
 const element = (
 <div>
     <div className="App-header">
@@ -21,6 +22,12 @@ ReactDOM.render(
   element,
   document.getElementById('root')
 );
+
+
+
+
+
+
 //Conditional Rendering
 function UserGreeting(props) {
 	return <h1>Welcome back</h1>

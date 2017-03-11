@@ -44,3 +44,5 @@ Logout
 </button>
 );
 }
+
+export default LoginControl;
