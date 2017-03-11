@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import video from './video.mp4'
 import './App.css';
+import ReactPlayer from 'react-player'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
- 
-      <video width="500" height="500" autoplay>
-      <source src={video} type="video/mp4" />
-      </video>
-      </div>
+          </div>
+      <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
       </div>
     );
   }
