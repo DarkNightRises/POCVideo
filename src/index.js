@@ -31,18 +31,33 @@ const element = (
 					</div>
 			);
 ReactDOM.render(
-  <NumberList numbers={numbers} />,
+  <NumbersList numbers={numbers} />,
   document.getElementById('root')
 );
 
-//Component for list 
-function NumberList(props) {
+
+/***
+Correct Key Usages
+***/
+function ListItem(props) {
+	return <li>{props.value}</li>;
+}
+function NumbersList(props) {
 	const numbers = props.numbers;
 	const listItems = numbers.map((number)=>
-		<li key={number.toString()}>{number}</li>
+		<ListItem key={number.toString()} value={number} />
 		);
 	return (<ul>{listItems}</ul>);
 }
+
+// //Component for list 
+// function NumberList(props) {
+// 	const numbers = props.numbers;
+// 	const listItems = numbers.map((number)=>
+// 		<li key={number.toString()}>{number}</li>
+// 		);
+// 	return (<ul>{listItems}</ul>);
+// }
 
 //Conditional Rendering
 function UserGreeting(props) {
