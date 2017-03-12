@@ -16,10 +16,20 @@ const element = (
 <Toggle />
 <LoginControl />
 </div>	
-)
-;
+);
+const numbers = [1,2,3,4,5];
+const list_items = numbers.map((number)=>
+<li>{number}</li>
+	);
+const new_element = (
+<div>
+    <div className="App-header">
+          </div>   
+<ul>{list_items}</ul>
+</div>
+	);
 ReactDOM.render(
-  element,
+  new_element,
   document.getElementById('root')
 );
 
